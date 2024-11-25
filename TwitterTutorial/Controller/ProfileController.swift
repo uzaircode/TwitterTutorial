@@ -11,24 +11,24 @@ private let reusableIdentifier = "TweetCell"
 private let headerIdentifier = "ProfileHeader"
 
 class ProfileController: UICollectionViewController {
-    //MARK: - Properties
-    
-    //MARK: - Lifecycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      configureCollectionView()
-    }
+  //MARK: - Properties
+  
+  //MARK: - Lifecycle
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    configureCollectionView()
+  }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     navigationController?.navigationBar.barStyle = .black
     navigationController?.navigationBar.isHidden = true
   }
-    //MARK: - Selector
-    
-    //MARK: - API
-    
-    //MARK: - Helpers
+  //MARK: - Selector
+  
+  //MARK: - API
+  
+  //MARK: - Helpers
   
   func configureCollectionView() {
     collectionView.backgroundColor = .white
@@ -69,6 +69,6 @@ extension ProfileController: UICollectionViewDelegateFlowLayout {
   }
   
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 100)
-    }
+    return CGSize(width: view.frame.width, height: 100)
+  }
 }

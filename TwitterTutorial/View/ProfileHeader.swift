@@ -12,7 +12,7 @@ class ProfileHeader: UICollectionReusableView {
   
   // MARK: - Properties
   private let filterBar = ProfileFilterView()
-
+  
   private let containerView: UIView = {
     let view = UIView()
     view.backgroundColor = .twitterBlue
@@ -45,7 +45,7 @@ class ProfileHeader: UICollectionReusableView {
     button.addTarget(self, action: #selector(handleEditProfileFollow), for: .touchUpInside)
     return button
   }()
- 
+  
   private let fullNameLabel: UILabel = {
     let label = UILabel ()
     label.font = UIFont.boldSystemFont(ofSize: 20)
@@ -68,7 +68,7 @@ class ProfileHeader: UICollectionReusableView {
     label.text = "This is a user bio that will span more than one line for test purposes"
     return label
   }()
- 
+  
   
   
   // MARK: - Lifecycle
